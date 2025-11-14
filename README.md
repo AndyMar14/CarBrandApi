@@ -379,10 +379,6 @@ Si encuentras este error, significa que la base de datos no se ha inicializado c
 
 Este proyecto es de código abierto y está disponible para uso educativo y comercial.
 
-## 👤 Autor
-
-Desarrollado como parte de una prueba técnica de backend.
-
 ---
 
 **¿Necesitas ayuda?** Revisa la documentación de Swagger en `/swagger` o consulta los logs de la aplicación para más detalles.
