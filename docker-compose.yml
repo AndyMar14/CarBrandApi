@@ -1,0 +1,36 @@
+﻿version: '3.9'
+
+services:
+  db:
+    image: postgres:16
+    container_name: marcasautos_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: MarcasDb
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  api:
+    build:
+      context: ./MarcaAutos.Api
+      dockerfile: Dockerfile
+    container_name: marcasautos_api
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      ASPNETCORE_URLS: "http://+:8080"
+      ConnectionStrings__DefaultConnection: "Host=db;Port=5432;Database=MarcasDb;Username=postgres;Password=postgres"
+    ports:
+      - "5000:8080"
+
+volumes:
+  postgres_data:

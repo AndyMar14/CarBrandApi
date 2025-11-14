@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A0C23E96-1B16-488B-899F-4A94C54AEDE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarcaAutos.Api", "MarcaAutos.Api\MarcaAutos.Api.csproj", "{55235369-F695-46F6-BA78-18AA0088BE88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarcaAutos.Tests", "MarcaAutos.Tests\MarcaAutos.Tests.csproj", "{98D21421-2DFD-4AC5-885E-B888F18AD285}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PruebaBackendMarcasAutos", "PruebaBackendMarcasAutos", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55235369-F695-46F6-BA78-18AA0088BE88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55235369-F695-46F6-BA78-18AA0088BE88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55235369-F695-46F6-BA78-18AA0088BE88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55235369-F695-46F6-BA78-18AA0088BE88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98D21421-2DFD-4AC5-885E-B888F18AD285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98D21421-2DFD-4AC5-885E-B888F18AD285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98D21421-2DFD-4AC5-885E-B888F18AD285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98D21421-2DFD-4AC5-885E-B888F18AD285}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A0C23E96-1B16-488B-899F-4A94C54AEDE9} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{55235369-F695-46F6-BA78-18AA0088BE88} = {A0C23E96-1B16-488B-899F-4A94C54AEDE9}
+		{98D21421-2DFD-4AC5-885E-B888F18AD285} = {A0C23E96-1B16-488B-899F-4A94C54AEDE9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EFF52F41-D530-466D-87D4-9CE45E9F6383}
+	EndGlobalSection
+EndGlobal
